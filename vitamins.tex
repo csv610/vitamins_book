@@ -1,0 +1,69 @@
+\documentclass[11pt,oneside]{book}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+
+\input{chapters/extended_study_guides}
+
+\definecolor{healthblue}{HTML}{245A75}
+\definecolor{softgray}{HTML}{F2F5F6}
+\hypersetup{colorlinks=true,linkcolor=healthblue,urlcolor=healthblue,citecolor=healthblue}
+\setlist{itemsep=2pt,topsep=4pt}
+\newcommand{\nutrient}[1]{\textbf{#1}}
+\newcommand{\warning}[1]{\begin{quote}\color{healthblue}\textbf{Safety note.} #1\end{quote}}
+
+\title{\Huge Vitamins and Minerals\\[0.4em]\Large A practical guide to nutrients, food, and health}
+\author{A general educational reference}
+\date{\today}
+
+\begin{document}
+\frontmatter
+\maketitle
+\chapter*{How to use this book}
+This book explains what vitamins and minerals do, where they come from, how inadequacy can develop, and when supplements may help. It is written for general education, not diagnosis or treatment. Nutrient needs vary with age, pregnancy, medical conditions, medicines, diet, and laboratory findings. A recommended dietary allowance (RDA) is a population reference value, not a personal prescription.
+
+The safest default is a varied eating pattern built around vegetables and fruit, legumes, whole grains, nuts and seeds, and appropriate protein foods. Supplements can be useful when food, absorption, sunlight, or life stage makes adequacy difficult, but more is not automatically better.
+
+\tableofcontents
+\mainmatter
+\input{chapters/01_foundations}
+\extendedguide{Nutrient foundations}{This chapter links nutrient science to requirements, bioavailability, assessment, and evidence-based health decisions.}
+\input{chapters/02_fat_soluble_vitamins}
+\extendedguide{Fat-soluble vitamins}{This chapter emphasizes vitamin A, D, E, and K, their storage, absorption, bone and vision effects, and toxicity.}
+\input{chapters/03_water_soluble_vitamins}
+\extendedguide{Water-soluble vitamins}{This chapter emphasizes vitamin C and B vitamins, metabolism, hematology, neurology, and replacement.}
+\input{chapters/04_minerals_major}
+\extendedguide{Major minerals}{This chapter emphasizes calcium, magnesium, phosphorus, sodium, potassium, chloride, fluid balance, and cardiac safety.}
+\input{chapters/05_minerals_trace}
+\extendedguide{Trace minerals}{This chapter emphasizes iron, zinc, copper, iodine, selenium, fluoride, deficiency patterns, and toxicity.}
+\input{chapters/06_life_stages}
+\extendedguide{Life-stage nutrition}{This chapter applies nutrient physiology to pregnancy, infancy, childhood, aging, vegan diets, and athletic activity.}
+\input{chapters/07_deficiency_excess}
+\extendedguide{Deficiency and excess}{This chapter develops diagnostic reasoning, laboratory interpretation, replacement, poisoning, and follow-up.}
+\input{chapters/08_supplements_interactions}
+\extendedguide{Supplements and interactions}{This chapter examines labels, evidence quality, pharmacology, medicine interactions, and deprescribing.}
+\input{chapters/09_food_planning}
+\extendedguide{Food planning}{This chapter translates nutrient science into practical, culturally responsive, affordable dietary patterns.}
+\input{chapters/10_health_questions}
+\extendedguide{Health questions}{This chapter applies risk-benefit reasoning, patient education, and research literacy to common questions.}
+\input{chapters/12_safety_recommendations}
+\extendedguide{Safety and recommendations}{This chapter provides practical, risk-aware guidance for food, supplements, interactions, special populations, and adverse events.}
+\input{chapters/13_synthesis_metabolism}
+\extendedguide{Synthesis and metabolism}{This chapter explains endogenous synthesis, precursor conversion, activation, microbial contribution, mineral handling, and commercial production.}
+\input{chapters/14_history_modern_perspectives}
+\extendedguide{History and modern perspectives}{This chapter traces the discovery and changing clinical interpretation of each recognized vitamin.}
+\input{chapters/15_reference_tables_exam_review}
+\extendedguide{Reference tables and examination review}{This chapter provides reference values, deficiency and toxicity comparisons, high-yield points, and practice questions.}
+\backmatter
+\input{chapters/11_references}
+\extendedguide{Reference and evidence guide}{This study guide explains how to use the cited authoritative sources and evaluate nutrient claims.}
+\input{chapters/16_glossary_abbreviations}
+\end{document}
